@@ -1,0 +1,12 @@
+<app-navbar (toggleSidenav)="collapsed.set(!collapsed())"/>
+
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side" [style.width]="sidenavWidth()">
+        <app-sidenav [collapsed]="collapsed()" />
+    </mat-sidenav>
+    <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
+        <div style="padding: 40px;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
