@@ -12,8 +12,8 @@ export const routes: Routes = [
             loadChildren: () =>
                 loadRemoteModule({
                     type: 'module', 
-                    //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-                    remoteEntry: 'https://swpyme.z19.web.core.windows.net/remoteEntry.js',
+                    remoteEntry: 'http://localhost:4201/remoteEntry.js',
+                    //remoteEntry: 'https://swpyme.z19.web.core.windows.net/remoteEntry.js',
                     exposedModule: './routes'
                 })
                 .then(m => m.MFE_USERS_ROUTES)
