@@ -7,6 +7,7 @@ export const routes: Routes = [
     {
         path: '',
         component: MainLayoutComponent,
+         canActivate: [MsalGuard],
         children: [
         {
             path: 'users',
